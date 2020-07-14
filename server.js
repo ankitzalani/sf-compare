@@ -21,3 +21,8 @@ app.use(express.static(__dirname + '/lib'));
 app.listen(port, ip, function() {
     console.log("Listening on " + ip + ": " + port);
 });
+
+app.get('/auth', function(req, res) {
+    console.log('success');
+    //res.redirect(oauth2.getAuthorizationUrl({ scope : 'api id web' }));
+});
