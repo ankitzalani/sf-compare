@@ -5,7 +5,8 @@
     <script>
         jsforce.browser.init({
             clientId: "3MVG9n_HvETGhr3DeLny5qSNBr71mq_fazczwcUGpccbZUMPJXJ6tp_mnYTt1jPC6F847j4O5HP1LcWS6gQOr",
-            redirectUri: "https://sf-compare.herokuapp.com/auth"
+            redirectUri: "https://sf-compare.herokuapp.com/auth",
+            proxyUrl: 'https://sf-compare.herokuapp.com/proxy/'
         });
         jsforce.browser.on("connect", function(conn) {
             conn.query("SELECT Id, Name FROM Account", function(err, res) {

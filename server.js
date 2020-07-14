@@ -7,6 +7,9 @@ var ip = process.env.IP || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0';
 
 var bodyParser = require('body-parser');
 
+var jsforceAjaxProxy = require('jsforce-ajax-proxy');
+app.all('/proxy/?*', jsforceAjaxProxy());
+
 app.use(cors());
 
 app.use(bodyParser.json());
