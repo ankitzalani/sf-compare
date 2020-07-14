@@ -16,6 +16,8 @@ app.use(bodyParser.urlencoded({
 //require('./server/index')(app);
 
 app.use(express.static(__dirname + '/client'));
+app.use(express.static(__dirname + '/lib'));
+
 app.listen(port, ip, function() {
     console.log("Listening on " + ip + ": " + port);
 });
