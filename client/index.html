@@ -14,7 +14,7 @@
                 return console.error(err);
             }
             console.log(res);
-            document.getElementById('result').innerHTML = res;
+            document.getElementById('result').innerHTML = JSON.stringify(res, null, 4);
         });
         });
       
