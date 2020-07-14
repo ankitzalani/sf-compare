@@ -23,6 +23,5 @@ app.listen(port, ip, function() {
 });
 
 app.get('/auth', function(req, res) {
-    console.log('success');
-    //res.redirect(oauth2.getAuthorizationUrl({ scope : 'api id web' }));
+    res.redirect('/');
 });
