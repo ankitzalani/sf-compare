@@ -6,15 +6,15 @@
         jsforce.browser.init({
             clientId: "3MVG9n_HvETGhr3DeLny5qSNBr71mq_fazczwcUGpccbZUMPJXJ6tp_mnYTt1jPC6F847j4O5HP1LcWS6gQOr",
             redirectUri: "https://sf-compare.herokuapp.com/auth"
-          });
-          jsforce.browser.on("connect", function(conn) {
+        });
+        jsforce.browser.on("connect", function(conn) {
             conn.query("SELECT Id, Name FROM Account", function(err, res) {
-              if (err) {
+            if (err) {
                 return console.error(err);
-              }
-              console.log(res);
-            });
-          });
+            }
+            console.log(res);
+        });
+        });
       
     </script>
   </head>
