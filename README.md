@@ -1,5 +1,5 @@
 
-# sf_Compare
+# Salesforce Compare tool - sf_compare
 
 An awesome tool to compare the Salesforce metadata in the cloud withing and among different orgs.
 
